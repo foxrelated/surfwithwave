@@ -1,0 +1,21 @@
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto Thin'), local('Roboto-Thin'), url(../erms40x/404.php) format('woff');
+}
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto Light'), local('Roboto-Light'), url(../erms40x/404.php) format('woff');
+}
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 800;
+	src: local('Roboto Medium'), local('Roboto-Medium'), url(../erms40x/404.php) format('woff');
+}
+img2 {
+	padding-bottom: 100px;
+}

@@ -1,0 +1,215 @@
+
+<!-- saved from url=(0045)http://wavetele.com/sub/frame/ui/login_ui.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0 maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="bootstrap.js"></script>
+<script type="text/javascript">
+      //<![CDATA[ 
+      $(window).load(function(){
+        changeContent = function(key) {
+          html = textHash[key];
+          $('#content').html(html);
+        }
+        
+        $("#menu a").click(function(e) {
+          $('#menu').collapse('hide');
+          changeContent(e.target.innerText);
+        });
+        
+        textHash = {  };
+      });//]]>  
+      
+      
+                        
+        $('document').ready(function(){
+                /*$('#mobile-nav-btn').on('click', function(){
+                        $('#iframed-site-login_ui').animate({
+                                'position':"relative",
+                                'left':"100px"
+                        }, 2000);
+                });*/
+                
+                
+                $("#ajax_login_form").load('http://excellencesys.com/index.php?do=/ #content').css('padding-top','20px');
+                $('#register_btn').on('click', function(e){
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $("#ajax_login_form").load('http://excellencesys.com/index.php?do=/user/register/ #main_registration_form_holder');
+                        $('body').css('min-height','390px');
+                });
+                
+        });
+                        
+    </script>
+    
+    
+    
+    
+    
+		<script type="text/javascript">
+			var oCore = {'core.is_admincp': false, 'core.section_module': 'core', 'profile.is_user_profile': false, 'log.security_token': 'c0cc8cccb75317c22366623ef3f8c657', 'core.url_rewrite': '2', 'core.country_iso': 'GB', 'core.can_move_on_a_y_and_x_axis' : false, 'core.default_currency': 'USD', 'core.enabled_edit_area': false, 'core.disable_hash_bang_support': false, 'core.site_wide_ajax_browsing': false, 'profile.user_id': 0};
+			var oParams = {'sJsHome': 'http://excellencesys.com/','sJsHostname': 'excellencesys.com','sSiteName': 'SiteName','sJsStatic': 'http://excellencesys.com/static/','sJsStaticImage': 'http://excellencesys.com/static/image/','sImagePath': 'http://excellencesys.com/theme/frontend/nebula/style/nebula/image/','sStylePath': 'http://excellencesys.com/theme/frontend/nebula/style/nebula/css/','sVersion': '3.7.0beta2','sJsAjax': 'http://excellencesys.com/static/ajax.php','sStaticVersion': 'ea23cce4eafff4875104b8f7daede545','sGetMethod': 'do','sDateFormat': 'MDY','sEgiftStyle': 'http://excellencesys.com/module/egift/static/css/default/default/display.css','sGlobalTokenName': 'core','sController': 'core.index-member','bJsIsMobile': false,'sProgressCssFile': 'http://excellencesys.com/theme/frontend/default/style/default/css/progress.css','sHostedVersionId': '','bWysiwyg': false,'sEditor': 'default','sJsCookiePath': '/','sJsCookieDomain': '','sJsCookiePrefix': 'coreee94','bPhotoTheaterMode': true,'bUseHTML5Video': false,'sAdminCPLocation': 'admincp','notification.notify_ajax_refresh': 2,'im_beep': 0,'im_interval_for_update': 3000,'bEnableMicroblogSite': false};
+			var oTranslations = {'core.are_you_sure': 'Are you sure?','core.yes': 'Yes','core.no': 'No','core.save': 'Save','core.cancel': 'Cancel','core.go_advanced': 'Go Advanced','core.processing': 'Processing','emoticon.emoticons': 'Emoticons','attachment.attach_files': 'Attach Files','core.close': 'Close','core.language_packages': 'Language Packages','core.move_this_block': 'Move This Block','core.uploading': 'Uploading','language.loading': 'Loading','core.saving': 'Saving...','core.loading_text_editor': 'Loading text editor','core.quote': 'Quote','core.loading': 'Loading'};
+			var oModules = {'ad': true,'admincp': true,'announcement': true,'api': true,'apps': true,'attachment': true,'ban': true,'blog': true,'captcha': true,'comment': true,'contact': true,'core': true,'custom': true,'egift': true,'emoticon': true,'error': true,'event': true,'facebook': true,'favorite': true,'feed': true,'forum': true,'friend': true,'help': true,'im': true,'input': true,'invite': true,'janrain': true,'language': true,'like': true,'link': true,'log': true,'mail': true,'marketplace': true,'mobile': true,'music': true,'newsletter': true,'notification': true,'page': true,'pages': true,'photo': true,'poke': true,'poll': true,'privacy': true,'profile': true,'quiz': true,'rate': true,'report': true,'request': true,'rss': true,'search': true,'share': true,'shoutbox': true,'subscribe': true,'tag': true,'theme': true,'tinymce': true,'track': true,'user': true,'video': true};
+			var oJsImages = {ajax_small: 'http://excellencesys.com/theme/frontend/default/style/default/image/ajax/small.gif',ajax_large: 'http://excellencesys.com/theme/frontend/default/style/default/image/ajax/large.gif',loading_animation: 'http://excellencesys.com/theme/frontend/default/style/default/image/misc/loading_animation.gif',close: 'http://excellencesys.com/theme/frontend/default/style/default/image/misc/close.gif',move: 'http://excellencesys.com/theme/frontend/default/style/default/image/misc/move.png',calendar: 'http://excellencesys.com/theme/frontend/default/style/default/image/jquery/calendar.gif'};
+			var oEditor = {'load': 'simple','active': true,'toggle_image': 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/fullscreen.png','toggle_phrase': 'Toggle Fullscreen', images:[{image: 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/text_bold.png',command: 'b',phrase: 'Bold'},{image: 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/text_italic.png',command: 'i',phrase: 'Italic'},{image: 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/text_underline.png',command: 'u',phrase: 'Underline'},{0: 'separator'},{image: 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/text_align_left.png',command: 'left',phrase: 'Align Left'},{image: 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/text_align_center.png',command: 'center',phrase: 'Align Center'},{image: 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/text_align_right.png',command: 'right',phrase: 'Align Right'},{0: 'separator'},{image: 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/text_list_bullets.png',js: 'Editor.getList(\'bullet\');',phrase: 'Bullets'},{image: 'http://excellencesys.com/theme/frontend/default/style/default/image/editor/text_list_numbers.png',js: 'Editor.getList(\'number\');',phrase: 'Ordered List'},{0: 'separator'}]};
+			var $Behavior = {};
+			var $Core = {};
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="Latest Blogs" href="http://excellencesys.com/index.php?do=/rss/id_1/" />
+		<link rel="alternate" type="application/rss+xml" title="Latest Events" href="http://excellencesys.com/index.php?do=/rss/id_3/" />
+		<link rel="alternate" type="application/rss+xml" title="Latest Forum Topics" href="http://excellencesys.com/index.php?do=/rss/id_4/" />
+		<link rel="alternate" type="application/rss+xml" title="Latest Videos" href="http://excellencesys.com/index.php?do=/rss/id_5/" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/layout.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/common.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/thickbox.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/jquery.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/pager.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/imgnotes.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/imgareaselect-default.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/comment.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/module/photo/static/css/default/default/view.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/module/photo/static/css/default/default/edit.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/module/video/static/css/default/default/video.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/welcome.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/announcement.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/default/style/default/css/editor.css?v=ea23cce4eafff4875104b8f7daede545" />
+		<link rel="stylesheet" type="text/css" href="http://excellencesys.com/theme/frontend/nebula/style/nebula/css/custom.css?v=ea23cce4eafff4875104b8f7daede545" />
+
+		<script type="text/javascript">
+					oTranslations['friend.show_more_results_for_search_term'] = 'Show more results for "{search_term}"';
+		</script>
+    
+    
+    
+    
+    
+    
+    
+    
+</head>
+
+<body>
+<style>
+  @-webkit-keyframes cf3FadeInOut {
+ 0% {
+     opacity:0.9;
+   }
+   25% {
+    opacity:0.7;
+  }
+  75% {
+    opacity:0.5;
+  }
+  100% {
+   opacity:0.4;
+}
+}
+
+#cf3 {
+  position:relative;
+  margin:0 auto;
+}
+#cf3 img {
+  left:0;
+}
+
+#cf3 img.top {
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+}
+#iphone5svg.svgportrait {
+top: 314px;
+}
+
+input[type*=submit] {
+        background: url(register_wave.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        border: none;
+        height: 63px;
+        text-indent: -99999px;
+}
+input[value*=Login] {
+        background: url(Sign_in_with_wave.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        border: none;
+        height: 63px;
+        text-indent: -99999px;
+}
+#ajax_login_form {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+}
+.table {
+        margin-bottom: 0px !important;
+}
+label, #js_register_step2 .table_left {
+font-weight: bold;
+}
+input[type*=text],input[type*=password] {
+        line-height: 22px !important;
+        height: 32px !important;
+        width: 80% !important;
+}
+select {
+width: auto;
+}
+
+#js_register_step2 .table:nth-of-type(2) .table_left, #js_register_step2 .table:nth-of-type(2) .table_right {
+width: 50%;
+float: left;
+position: relative;
+top: 7px;
+}
+
+
+#js_register_step2 .table:nth-of-type(2) .table_left label {
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 5px;
+}
+#js_register_step2 .table:nth-of-type(2) .table_right select {
+        float: left;
+}
+
+#ipad.portrait #ajax_login_form {
+padding-top: 15% !important;
+}
+
+        body {
+                max-height: 500px;
+                height: 100%;
+                min-height: 340px;
+        }
+        
+        
+</style>
+<div class="viewport">
+  <div class="frame">
+        <div class="view" style="text-align: center;">
+                <div id="ajax_login_form"></div>
+                <!-- <iframe frameborder="0" width="101%" height="100%" allowtransparency="1" scrolling="yes" id="iphone_content" src="1.htm" name="iphone_content"></iframe>-->
+                <!--<a href="http://excellencesys.com/index.php?do=/user/register/"><img src="Sign_in_with_wave.svg" width="70%" border="0"></a>-->
+                <a id="register_btn" href="/" class="style8">Register for FREE</a><br/>
+                <span>Featuring Incognito-Mode</span>
+        </div>
+  </div>
+</div>
+
+
+</body></html>

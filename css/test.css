@@ -1,0 +1,40 @@
+       #wave_logo_1{
+display: block;
+margin: 0 auto;
+max-width: 114px;
+position: relative;
+top: -8px;
+}
+
+
+  @-webkit-keyframes cf3FadeInOut {
+ 0% {
+     opacity:0.9;
+   }
+   25% {
+    opacity:0.7;
+  }
+  75% {
+    opacity:0.5;
+  }
+  100% {
+   opacity:0.4;
+}
+}
+
+#custom-mobile-header {
+  position:relative;
+  margin:0 auto;
+}
+#custom-mobile-header img {
+  left:0;
+}
+
+#custom-mobile-header img.tops {
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+}
+	

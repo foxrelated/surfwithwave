@@ -1,0 +1,24 @@
+body {
+	background-color: #CCFFFF;
+}
+
+body, td, th {
+	color: #333333;
+}
+
+h1, h2 {
+	color: #13BBF2;
+
+}
+
+h99 {
+	color: #ffffff;
+	font-size:18px;
+}
+h3, h4, h5, h6 {
+	color: #13BBF2;
+}
+
+a {
+  color: #003366;
+}

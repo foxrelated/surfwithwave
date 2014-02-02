@@ -1,0 +1,418 @@
+/* ############################################## */
+/* ######### [ COMPASS ] ######################## */
+/* ############################################## */
+
+@import "compass/reset";
+@import "compass";
+@import "../js/reveal/reveal.css";
+@import "../js/chosen/chosen.min.css";
+
+/* ############################################## */
+/* ######### [ VARIABLES ] ###################### */
+/* ############################################## */
+
+$brandColor: #49C8F5;
+$brandContrastColor: #141516;
+
+/* ############################################## */
+/* ######### [ FONTS ] ########################## */
+/* ############################################## */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+$bold: 700;
+$normal: 400;
+
+/* ############################################## */
+/* ######### [ COMMON ] ######################### */
+/* ############################################## */
+
+a {
+	text-decoration: none;
+}
+*,
+body,
+html {
+	@include box-sizing(border-box);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h1 {
+	font-size: 200%;
+	font-weight: $bold;
+}
+
+/* ############################################## */
+/* ######### [ HEADER ] ######################### */
+/* ############################################## */
+
+header {
+	background: $brandContrastColor;
+	height: 80px;
+	overflow: hidden;
+}
+#shareholder_info {
+	background: $brandColor;
+	color: #fff;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+
+	span {
+		margin: 0 15px;
+	}
+}
+#logo {
+	float: left;
+	height: 75px;
+	width: 200px;
+	display: block;
+	overflow: hidden;
+
+	img {
+		margin-top: -10px; // Centering, SVG doesn't fit.
+	}
+}
+#main_nav {
+	float: right;
+	height: 55px;
+	border-left: 1px solid lighten($brandContrastColor, 10%);
+
+	li {
+		display: block;
+		height: 55px;
+		line-height: 55px;
+		float: left;
+		border-right: 1px solid lighten($brandContrastColor, 10%);
+		font-weight: $bold;
+
+		a {
+			font-size: 120%;
+			font-weight: $bold;
+			display: block;
+			height: 100%;
+			padding: 0 20px;
+			color: $brandColor;
+			@include transition( all 0.3s ease-in-out );
+
+			&:hover {
+				background: lighten($brandContrastColor, 12%);
+			}
+		}
+	}
+}
+.nav_button {
+	@include border-radius(3px);
+	@include transition( all 0.3s ease-in-out );
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	font-weight: $bold;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 20px;
+	margin: 10px 0 0 15px;
+	float: right;
+}
+#nav_get_started {
+	color: #fff;
+	background: #68C70A;
+	border: 1px solid darken(#68C70A, 8%);
+
+	&:hover {
+		background: darken(#68C70A, 5%);
+	}
+}
+#nav_login {
+	color: #fff;
+	border: 1px solid lighten($brandContrastColor, 20%);
+	background: lighten($brandContrastColor, 20%);
+
+	&:hover {
+		background: lighten($brandContrastColor, 15%);
+	}
+}
+
+/* ############################################# */
+/* ############ [ COMMON ] ##################### */
+/* ############################################# */
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* ############################################# */
+/* ############ [ CTA AREA ] ################### */
+/* ############################################# */
+
+/* Font family would obvious be global, but don't want to overwrite other stylesheet's defaults in this demo... */
+
+#cta {
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url(../img/bg/1400.jpg) #73A7BD;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 324px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: table;
+	border-bottom: 3px solid #000;
+}
+#tagline_wrap {
+	display: table-cell;
+	vertical-align: middle;
+}
+#tagline {
+	font-size: 55px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+	background: url(../img/wifi_icon.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-bottom: 70px;
+	margin-top: -60px;
+}
+
+/* ############################################# */
+/* ##### [ BUTTONS ] ########################### */
+/* ############################################# */
+
+.landing_button {
+	color: #fff;
+	padding: 0 20px;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	font-weight: $bold;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+	@include border-radius(6px);
+	border: 2px solid #30b5ec;
+	background: #64d0f6;
+	@include background-image(linear-gradient(top,  #64d0f6 0%, #3eaad1 100%));
+	@include box-shadow(0 1px 1px 1px rgba(0,0,0,0.44), -20px 2px 15px 0px rgba(255,255,255,.2) inset);
+}
+input.landing_button {
+	line-height: 30px;
+}
+
+/* ############################################# */
+/* ##### [ DARKENED INFO BOXES ] ############### */
+/* ############################################# */
+
+.darken {
+	background: #F5F5F5;
+	border: 1px dashed #ccc;
+	padding: 10px;
+	@include border-radius(6px);
+}
+
+/* ############################################# */
+/* ############ [ INFO BOXES ] ################# */
+/* ############################################# */
+
+#info_boxes {
+	margin-top: -77px;
+}
+#info_boxes:after {
+	content: " ";
+	width: 100%;
+	display: block;
+	clear: both;
+}
+.info_box {
+	border: 1px solid #ccc;
+	@include border-radius(6px);
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 312px;
+	float: left;
+	font-size: 16px;
+	text-align: left;
+
+	.img {
+		width: 258px;
+		height: 148px;
+		border: 1px dashed #ccc;
+		@include border-radius(3px);
+		@include box-shadow(0 -1px 2px 1px rgba(100,100,100,0.1) inset);
+	}
+}
+.info_box:first-child {
+	margin-right: 30px;
+}
+.info_box:last-child {
+	float: right;
+}
+.info_box_title {
+	height: 35px;
+	line-height: 35px;
+	color: #181919;
+	@include border-radius(6px 6px 0 0);
+	background: #EDEDED;
+	border-bottom: 1px solid #ccc;
+	font-weight: $bold;
+}
+.info_box_title span {
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	margin-right: 10px;
+	text-align: center;
+	border-right: 1px dashed #ccc;
+}
+.info_box_cont {
+	padding: 15px;
+	height: 200px;
+
+	.darken {
+		height: 170px;
+	}
+}
+#create_profile .img {
+	@include background-image(image-url('info_box/sign_up.jpg'));
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* ######## [ Signup Form ] ######## */
+#signup {
+	color: #6c6c6c;
+}
+/*
+	Using a DIV as the submit button just for demo purposes. There are
+	global styles on input[type=submit] that didn't seem worth overriding
+	for the demo.
+*/
+#temp_submit {
+
+}
+#upgrade_router {
+	.img {
+		@include background-image(image-url('info_box/upgrade_router.jpg'));
+	}
+}
+#free_internet_wrap {
+	text-align: center;
+	font-size: 22px;
+	color: #6c6c6c;
+}
+#free_internet_wrap:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+#free_internet {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+#free_internet span {
+	display: block;
+	color: #49C8F5;
+}
+
+/* ############################################# */
+/* ############ [ GET STARTED ] ################ */
+/* ############################################# */
+
+#get_started_bottom {
+	padding: 45px 0 30px;
+	text-align: center;
+
+	.landing_button {
+		font-size: 170%;
+		padding: 0 35px;
+		height: 55px;
+		line-height: 55px;
+	}
+}
+
+/* ############################################# */
+/* ############ [ NEED MORE INFO ] ############# */
+/* ############################################# */
+
+#need_more_info_wrap {
+	width: 100%;
+	border-top: 0px solid #000;
+	margin: 30px 0 30px;
+	text-align: center;
+}
+#need_more_info {
+	width: 600px;
+	font-size: 110%;
+	font-weight: bold;
+	color: #000;
+	margin: -22px auto 0 auto;
+	padding: 10px;
+}
+#need_more_info a {
+	color: #49C8F5;
+	border-bottom: 1px dashed #49C8F5;
+}
+#need_more_info a:hover {
+	border-bottom: none;
+}
+
+/* ############################################# */
+/* ############ [ REGISTER FORM ] ############## */
+/* ############################################# */
+
+#birthday {
+	select,
+	.chosen-container {
+		float: left;
+		margin-right: 10px;
+	}
+	label {
+		float: left;
+		margin-top: 6px;
+		width: 100%;
+		clear: both;
+	}
+}
+
+/* ############################################# */
+/* ############ [ STANDARD FORMS ] ############# */
+/* ############################################# */
+
+.form {
+	h1 {
+		margin-bottom: 15px;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	}
+	.txt {
+		border: 1px solid #ccc;
+		@include border-radius(3px);
+		@include box-shadow(2px 2px 2px 0px rgba(0,0,0,0.1) inset);
+		width: 100%;
+		padding: 10px;
+	}
+	label {
+		font-weight: $bold;
+		font-size: 14px;
+		margin: 4px 0 15px;
+		display: block;
+		color: #666;
+	}
+}
+
+/* ############################################# */
+/* ########### [ FOOTER PLACEHOLDER ] ########## */
+/* ############################################# */
+
+/*
+	The site where I got the footer earlier is down: http://excellencesys.com/demo.html
+	Because this is just copied/pasted code anyway, I throw in a footer image as a placeholder
+	from a screenshot I'd taken earlier.
+*/
+
+#footer_placeholder {
+	background: url(../img/footer_placeholder.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 251px;
+	width: 100%;
+}

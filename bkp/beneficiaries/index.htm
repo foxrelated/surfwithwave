@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js  progressbar meter" style="" lang="en-UK"><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+.style1 {
+	font-size: small;
+	font-weight: bold;
+}
+-->
+</style>
+
+<!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta http-equiv="Content-Language" content="en-us" />
+        <![endif]-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Wave</title>
+<!-- begin css  -->
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="demo_table.css">
+<link rel="stylesheet" type="text/css" href="style3.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-responsive.css">
+<!-- end css -->
+<link href="nprogress.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link href="css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" media="all" href="thirdparty4c02.css">
+<link rel="stylesheet" media="all" href="CloudFlare4c02.css">
+<link rel="stylesheet" media="all" href="features-cdn4c02.css">
+<script src="jquery_002.js"></script>
+<script src="modernizr_002.js"></script>
+<script type="text/javascript" src="jsapi"></script>
+<script type="text/javascript" src="wrapper.js"></script>
+<script type="text/javascript" src="pace.js"></script>
+<script type="text/javascript">
+    google.load('visualization', '0', {'packages' : ['table']});
+    google.setOnLoadCallback(init);
+
+    var dataSourceUrl = 'https://docs.google.com/spreadsheet/ccc?key=0AjaDYTsxYrzTdFc2N2FFVVhSYnBfbTFnUXRwdHhydnc&single=true&gid=11';
+    var query, options, container;
+
+    function init() {
+      query = new google.visualization.Query(dataSourceUrl);
+      container = document.getElementById("table");
+      options = {'pageSize': 100};
+      sendAndDraw();
+    }
+
+    function sendAndDraw() {
+      query.abort();
+      var tableQueryWrapper = new TableQueryWrapper(query, container, options);
+      tableQueryWrapper.sendAndDraw();
+    }
+
+  </script><script src="a" type="text/javascript"></script><link href="uitable.css" type="text/css" rel="stylesheet"><script src="formatdefaultuitable.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) { var Wave =[{verbose:0,p:1366944316,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},oracle:0,paths:{CloudFlare:"media/javascripts/"},atok:"bcc990886901381d5e6f6dd9bf01d900",zone:"CloudFlare.com",rocket:"0",apps:{}}];CloudFlare.push({"apps":{"ape":"fcc577c2991f4d7ec340f4b533d50ecb"}});var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="media/javascripts/CloudFlare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]>
+</script>
+<script src="jquery_003.js" type="text/javascript"></script>
+<script src="modernizr.js" type="text/javascript"></script>
+<script>
+		$(document).ready(function() {
+			if(!Modernizr.meter){
+				alert('Sorry your brower does not support HTML5 progress bar');
+			} else {
+				var progressbar = $('#progressbar'),
+					max = progressbar.attr('max'),
+					time = (10000/max)*1,	
+			        value = progressbar.val();
+
+			    var loading = function() {
+			        value += 0;
+			        addValue = progressbar.val(value);
+			        
+			        $('.progress-value').html(value + '%');
+
+			        if (value == max) {
+			            clearInterval(animate);			           
+			        }
+			    };
+
+			    var animate = setInterval(function() {
+			        loading();
+			    }, time);
+			};
+		});
+	</script>
+<style>
+.google-visualization-table-div-page {
+  display:none;!important;
+  visibility: hidden; !important;
+}
+</style>
+<link rel="shortcut icon" type="image/icon" href="http://wavetele.com/layout/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/apple-touch-icon-144x144-precomposed.png">
+<link rel="alternate" type="application/rss+xml" href="http://blog.cloudflare.com/rss.xml">
+<script type="text/javascript" src="syncprerequisite.js"></script>
+<link href="maia-apps.css" rel="stylesheet">
+<script src="jquery-1.js"></script>
+<script src="nprogress.js"></script>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="style2.css">
+<style>
+#progress {
+position: fixed;
+z-index: 2147483647;
+top: 0;
+left: -6px;
+width: 1%;
+height: 2px;
+background: #0088CC;
+-moz-border-radius: 1px;
+-webkit-border-radius: 1px;
+border-radius: 1px;
+-moz-transition: width 500ms ease-out,opacity 400ms linear;
+-ms-transition: width 500ms ease-out,opacity 400ms linear;
+-o-transition: width 500ms ease-out,opacity 400ms linear;
+-webkit-transition: width 500ms ease-out,opacity 400ms linear;
+transition: width 500ms ease-out,opacity 400ms linear;
+}
+#progress dd, #progress dt {
+position: absolute;
+top: 0;
+height: 2px;
+-moz-box-shadow: #0088CC 1px 0 6px 1px;
+-ms-box-shadow: #0088CC 1px 0 6px 1px;
+-webkit-box-shadow: #0088CC 1px 0 6px 1px;
+box-shadow: #0088CC 1px 0 6px 1px;
+-moz-border-radius: 100%;
+-webkit-border-radius: 100%;
+border-radius: 100%;
+}
+#progress dt {
+opacity: .6;
+width: 180px;
+right: -80px;
+clip: rect(-6px,90px,14px,-6px);
+}
+#progress dd {
+opacity: .6;
+width: 20px;
+right: 0;
+clip: rect(-6px,22px,14px,10px);
+}
+input, textarea, select, .uneditable-input {
+height: 43px; 
+}
+</style><script>
+setTimeout(function() {
+    $('#123').fadeOut('fast');
+}, 27000); // <-- time in milliseconds
+</script><script>
+jQuery(document).ready(function() {
+jQuery("body").append(jQuery("<div><dt/><dd/></div>").attr("id", "progress"));
+jQuery("#progress").width(100+ "%");
+jQuery("#progress").width("101%").delay(100).fadeOut(800, function() {
+jQuery(this).remove();
+});
+});
+</script><link href="coin.css" type="text/css" rel="stylesheet" id="COINWIDGETCOM_STYLESHEET"><script src="tq" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="tooltip.htm"></head>
+
+
+
+
+<body class=" pace-running"><div class="pace pace-active"><div data-progress="99" data-progress-text="99%" style="width: 100%;" class="pace-progress">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div id="SiteContainer" class="structural">
+  <div id="BodyContent" class="structural fixedWidth clear standard radish">
+    <div class="background">
+      <div class="middle"></div>
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+    <div class="inner">
+      <div class="section cdn">
+        <div class="grid_4">
+          <div class="rail">
+            <div class="nav">
+              <ol>
+                <li class="link"><a href="http://wavetele.com/layout/Pages/shares-area/stakeholders.html"><span>Overview</span></a></li>
+                <li class="link"><a href="http://wavetele.com/"><span>Past Performance</span></a></li>
+                <li class="link"><a href="http://wavetele.com/"><span>Valuation</span></a></li>
+                <li class="link"><a href="http://wavetele.com/"><span>Funding Rounds</span></a></li>
+                <li class="link active"><a href="http://wavetele.com/"><span>Beneficiaries</span></a></li>
+                <li class="link"><a href="http://wavetele.com/"><span>Trustees</span></a></li>
+                <li class="link"><a href="http://wavetele.com/"><span>Royalties</span></a></li>
+				  <li class="link"><a href="http://wavetele.com/"><span>Buy/Sell Shares</span></a></li>
+              </ol>
+            </div><div align="center"><br>
+              <img src="bitcoin-stock-1708662136.jpg" alt="m"></div>
+            <p></p>
+			  <div align="center"><span><strong>Invest Now</strong></span>
+			      <p></p>
+			     <span class="style1">(924mBTC per Share)</span>
+			    <p></p>
+		          </div>
+			  <form action="https://bitpay.com/checkout" method="post">
+                <div align="center">
+                  <input name="action" value="cartAdd" type="hidden">
+                  <input name="data" value="T3QSqsjHaZLAujSyqAnBNv" type="hidden">
+                  <input src="button1.png" name="submit" alt="Invest using Bitcoin" border="0" type="image">
+                </div>
+			  </form>
+			<p align="center">Pay P2P for lower fees</p>
+			  <p align="center">
+			    <script src="coin.js"></script>
+			    <script>
+CoinWidgetCom.go({
+	wallet_address: "1EPAyFv75fUKaSQiNxMNAtaR6tBo6AZDKU"
+	, currency: "bitcoin"
+	, counter: "hide"
+	, alignment: "ar"
+	, qrcode: false
+	, auto_show: false
+	, lbl_button: "Click Here"
+	, lbl_address: "Wave's Bitcoin Address is:"
+	, lbl_count: ""
+	, lbl_amount: ""
+});
+                </script><span data-coinwidget-instance="0" class="COINWIDGETCOM_CONTAINER"><a class="COINWIDGETCOM_BUTTON_BITCOIN" href="#"><img src="icon_bitcoin.png"><span>Click Here</span></a></span>	 
+		    </p> 
+                <p></p>
+		          <p></p>
+		    <div class="hrDotted"></div>
+          </div>
+        </div>
+        <div class="article article-right">
+          <h2>List of Current Beneficiaries</h2>
+          <p align="justify">This page highlights the current list of 
+beneficiaries and their equity stake in Wave. Thanks to Bitcoin all 
+investors in Wave are able to remain anonymous whilst at the same time, 
+real time information about our financial model and performance be made 
+transparent via our platform. </p>
+                 <script type="text/javascript" src="chart.js"> {"dataSourceUrl":"//docs.google.com/a/trusted-office.com/spreadsheet/tq?key=0AjaDYTsxYrzTdFc2N2FFVVhSYnBfbTFnUXRwdHhydnc&transpose=0&headers=1&range=A1%3AB53&gid=11&pub=1","options":{"vAxes":[{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"titleTextStyle":{"bold":true,"color":"#000","fontSize":14},"pieHole":0.5,"booleanRole":"certainty","title":"Beneficiaries","height":510,"animation":{"duration":0},"colors":["#3366CC","#DC3912","#FF9900","#109618","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395","#994499","#22AA99","#AAAA11","#6633CC","#E67300","#8B0707","#651067","#329262","#5574A6","#3B3EAC","#B77322","#16D620","#B91383","#F4359E","#9C5935","#A9C413","#2A778D","#668D1C","#BEA413","#0C5922","#743411"],"width":720,"is3D":false,"hAxis":{"useFormatFromData":true,"title":"Horizontal axis title","minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"tooltip":{}},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"PieChart","chartName":"Chart1"} </script>
+   
+         
+        </div>
+        <div id="demo" class="article article-right fixed-article"></div>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div id="Footer" class="structural fixedWidth standard">
+    <div class="inner">
+      <div class="section">
+        <div id="PublicFooter" class="structural fixedWidth standard">
+          <div id="PublicFooter-lowerright"> <a id="LinkedInLink" href="http://www.linkedin.com/" target="_blank">
+            <div class="cf-icon service linkedin"> </div>
+            </a> <a id="GooglePlusLink" href="https://plus.google.com/" rel="publisher" target="_blank">
+            <div class="cf-icon service googleplus"> </div>
+            </a> <a id="TwitterLink" href="http://twitter.com/" target="_blank">
+            <div class="cf-icon service twitter"> </div>
+            </a> <a id="FacebookLink" href="http://www.facebook.com/" target="_blank">
+            <div class="cf-icon service facebook"> </div>
+            </a> </div>
+          <div id="PublicFooter-navigation">
+            <div class="PublicFooter-navigation-group">
+              <h5>What we do</h5>
+              <ul>
+                <li><a href="http://wavetele.com/">Free Internet Access</a></li>
+                <li><a href="http://wavetele.com/">SVG AdPlatform</a></li>
+                <li><a href="http://wavetele.com/">Features tour</a></li>
+              </ul>
+            </div>
+            <div class="PublicFooter-navigation-group">
+              <h5>Community</h5>
+              <ul>
+                <li><a href="http://wavetele.com/">Case studies</a></li>
+                <li><a href="http://wavetele.com/">Wave Telecom blog</a></li>
+                <li><a href="http://wavetele.com/">Web badges</a></li>
+                <li><a href="http://wavetele.com/">Developers</a></li>
+              </ul>
+            </div>
+            <div class="PublicFooter-navigation-group">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="http://wavetele.com/">Help center</a></li>
+                <li><a href="http://wavetele.com/">Support videos</a></li>
+                <li><a href="http://wavetele.com/">System status</a></li>
+                <li><a href="http://wavetele.com/">Downloads</a></li>
+              </ul>
+            </div>
+            <div class="PublicFooter-navigation-group-last">
+              <h5>About us</h5>
+              <ul>
+                <li><a href="http://wavetele.com/">Our team</a></li>
+                <li><a href="http://wavetele.com/">Stakeholders</a></li>
+                <li><a href="http://wavetele.com/">Careers</a></li>
+                <li><a href="http://wavetele.com/">Press center</a></li>
+                <li><a href="http://wavetele.com/">Terms of service</a></li>
+                <li><a href="http://wavetele.com/">Privacy &amp; security</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div id="PublicFooter-copyright"> <span>Wave Telecom © 2011</span> </div>
+    </div>
+  </div>
+  <div id="SubFooter" class="structural fixedWidth"> </div>
+</div><img src="tq.htm" style="display: none;">
+
+        <script src="jquery.js"></script>
+        <script src="tabletop.js"></script>
+        <script src="tabletop-feed.js"></script>
+        <script src="data-tables-bootstrap.js"></script>
+        <script src="bootstrap-dropdown.js"></script>
+<script type="text/javascript" src="thirdparty4c02.js"></script>
+<script type="text/javascript" src="CloudFlare4c02.js"></script>
+<script>$.cf.data = {"login":false};</script>
+<script type="text/javascript">
+            $(function() {
+
+                $.cf.invalidateClient();
+                $('#SiteNavigation > li.features').addClass('active');
+                $('#SecondaryNavigation > li.features-cdn').addClass('active');
+                $('#SiteNavigation').markedNavigation({animated: false});
+                $('#SiteNavigation > li > a[tooltip]').tooltip();
+                $('#SubFooterContactLink').bind('click', function(event) { $.cf.loadModalDialog({type: 'feedback'}, {title: 'Send feedback'}); });
+
+            });
+        </script>
+<script data-cfasync="true" type="text/javascript">
+            var smtId = "34r3847ow";
+            var smtDefaultStyles = false;
+            var smtRedirect = false;
+            var smtProt = (("https:" == document.location.protocol) ? "https://" : "http://");
+            document.write(unescape("%3Cscript src='" + smtProt + "cdn01.smartling.com/ls/"+ smtId +".js' type='text/javascript'%3E%3C/script%3E"));
+        </script><script src="34r3847ow.js" type="text/javascript"></script>
+<script>
+    $('body').show();
+    $('.version').text(NProgress.version);
+    NProgress.start();
+    setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 500);
+
+    $("#b-0").click(function() { NProgress.start(); });
+    $("#b-40").click(function() { NProgress.set(200); });
+    $("#b-inc").click(function() { NProgress.inc(); });
+    $("#b-100").click(function() { NProgress.done(); });
+  </script><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">Current Funding Round</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">17yCUg7iUr7m6iva5cYXuZY57NtHdcgQQ8</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">1E3HXfLYCYXtPbdFEbkdZMAqq38L7xXpp3</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">1HJRJu4g9t8UDK8XdsZyxs6aH9fkgDSPqv</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">1AD7uZobAS37R2iM6Cr9gAPAvY4tRSXg62</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">1FVjQu45U6gaJDJ1NXxqWDZb8J2FN3Ft3m</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">13LKnaa5Mtws1y3weiQTqHqN8DmDZYBmGk</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">1GbGoPoEtmgccfh5pcKBLLEqKExEq2DiDN</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">1DbwuCLu9jE9CkNzckMMc9jHVhzTKaeVLw</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">19JYikZKRDrhPRokVAjQWc7itw9vGSGUCM</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">19ndjusPXZZyCALdX4crguMBjPUQ7Q1vSz</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">13mbEhMeRn2srsgGirWSmmiVc4h9o1kYjs</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">1LNvhRJbff4LSD1SJMTEhMvM6H27gYtBuZ</div></div><div style="position: absolute; display: none;"><div style="background: none repeat scroll 0% 0% infobackground; padding: 1px; border: 1px solid infotext; font-size: 13px; margin: 13px; font-family: Arial;">1Ge9bCS4MfiZinWUm6C1iwYTNJgYQf2GbR</div></div>
+
+
+</body></html>

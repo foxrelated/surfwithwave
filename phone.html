@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Phone for WaveTele</title>
+<link rel="stylesheet" type="text/css" href="http://www.wavetele.info/css/custom-wave.css">
+<link rel="stylesheet" type="text/css" href="http://www.wavetele.info/css/font-awesome.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body style="margin: 0px; padding: 0px;">
+        <Script>
+                $('#numbers_selectors ul li').on('click', 'a', function(e){
+                        alert('clicked');
+                        e.preventDefault();
+                        e.stopPropagation();
+                        var numberSelected = $(this).attr(href);
+                        $('#numbers').html($numberSelected);
+                });
+                
+        </script>
+        <div id="numbers"></div>
+        <ul id="numbers_selectors">
+                <li><a href="#" data-number="1" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">1</a></li>
+                <li><a href="#" data-number="2" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">2<span>ABC</span></a></a></li>
+                <li><a href="#" data-number="3" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">3<span>DEF</span></a></a></li>
+                <li><a href="#" data-number="4" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">4<span>GHI</span></a></a></li>
+                <li><a href="#" data-number="5" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">5<span>JKL</span></a></a></li>
+                <li><a href="#" data-number="6" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">6<span>MNO</span></a></a></li>
+                <li><a href="#" data-number="7" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">7<span>PQRS</span></a></a></li>
+                <li><a href="#" data-number="8" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">8<span>TUV</span></a></a></li>
+                <li><a href="#" data-number="9" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">9<span>WXYZ</span></a></a></li>
+                <li><a href="#" data-number="*" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">*</a></li>
+                <li><a href="#" data-number="0" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">0<span>+</span></a></a></li>
+                <li><a href="#" data-number="#" onclick="
+                        $x = $(this).attr('data-number');
+                        $y = $('#numbers').html();
+                        $('#numbers').html($y + $x);
+                ">#</a></li>
+        </ul>
+        <div id="phone_footer">
+                <a href="#" onclick="alert('You must be using a real mobile device to use this feature.')">call</a>
+                <a href="#">&#xf067;</a>
+        </div>
+</body>
+</html>

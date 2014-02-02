@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)http://wavetele.com/sub/frame/login/1.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="initial-scale=0.1,maximum-scale=0.1,user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<title>Wave Login</title>
+<style>
+img {
+-ms-interpolation-mode: bicubic;
+} 
+div {
+    width: 100%;
+    top: 20%;
+    left: 0.1%;
+}
+
+.style8 {
+	color: #13BBF2;
+	font-style: italic;
+	font-size: 110%;
+	line-height: 0.5em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style9 {
+	color: #13BBF2;
+	font-style: italic;
+	font-size: 80%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+</style>
+<script src="rsa.js"></script></head>
+
+<body class="touch acw portrait" style="font-size: 18px;">
+<script>once();</script>
+<table valign="middle" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td valign="middle"><div id="dynamicDiv"><p align="center"><a href="http://excellencesys.com/index.php?do=/user/register/"><img src="Sign_in_with_wave.svg" width="70%" border="0"></a></p>
+      <p align="center" style="vertical-align:middle;"><span class="style10"><a href="http://excellencesys.com/index.php?do=/user/register/" class="style8">Register for FREE</a></span></p>
+	     <p align="center" style="vertical-align:middle;"><span class="style9">(Featuring Incognito-Mode)</span></p>
+		       </div></td>
+  </tr>
+</tbody></table>
+
+
+</body></html>

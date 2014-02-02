@@ -1,0 +1,2 @@
+<?php defined('PHPFOX') or exit('NO DICE!'); ?>
+<?php $aContent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A523 Safari/8536.25'; ?>

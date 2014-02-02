@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<!-- Mirrored from wavetele.com/layout/resources-downloads.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 18 Dec 2013 04:26:05 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta http-equiv="Content-Language" content="en-us" />
+        <![endif]-->
+<meta charset="UTF-8">
+
+
+<title>Downloads | Wave | The web performance &amp; security company</title>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) { var Wave =[{verbose:0,p:1366944316,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},oracle:0,paths:{CloudFlare:"media/javascripts/"},atok:"bcc990886901381d5e6f6dd9bf01d900",zone:"CloudFlare.com",rocket:"0",apps:{}}];CloudFlare.push({"apps":{"ape":"f5dae83eb6275b375b5d55f5a875f016"}});var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="../erms40x/404.php";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]>
+</script>
+<link rel="shortcut icon" type="image/icon" href="../erms40x/404.php"/>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/apple-touch-icon-144x144-precomposed.png">
+<link rel="alternate" type="application/rss+xml" href="http://blog.cloudflare.com/rss.xml"/>
+<link rel="stylesheet" media="all" href="media/stylesheets/thirdparty4c024c02.css?v=CB6-2013-03-12-3"/>
+<link rel="stylesheet" media="all" href="media/stylesheets/CloudFlare4c024c02.css?v=CB6-2013-03-12-3"/>
+<link rel="stylesheet" media="all" href="../erms40x/404.php?v=CB6-2013-03-12-3"/>
+<script type="text/javascript" src="media/javascripts/syncprerequisite.js"></script><link href="media/stylesheets/maia-apps.css" rel="stylesheet"></head>
+<body>
+<div id="SiteContainer" class="structural">
+<div id="BodyContent" class="structural fixedWidth clear standard secondary marketing">
+<div class="background">
+<div class="middle"></div>  
+<div class="top"></div>  
+<div class="bottom"></div>  
+</div>  
+<div class="inner">
+<div id="Secondary">
+<div class="inner">
+<ul id="BreadCrumbs">
+<li class="first"><a href="#">Help</a></li>
+<li class="last"><a href="resources-downloads.html">Resources downloads</a></li>
+</ul>  
+<ul id="SecondaryNavigation">
+<li class="videos"><a href="videos.html">Videos</a></li>
+<li class="system-status"><a href="system-status.html">System status</a></li>
+<li class="resources-downloads last"><a href="resources-downloads.html">Downloads</a></li>
+</ul>  
+</div>  
+</div>  
+<div id="downloads">
+<div class="section">
+<div class="aside">
+<ul>
+<li class="roundedTwo">
+<h5>Are you a developer?</h5>
+<p>Be sure to check out <a href="http://developers.cloudflare.com/">our developer page</a> for resources for developing apps and other APIs.</p>
+</li>
+</ul>
+</div>
+<div class="article">
+<h2>Wave Telecom resources and downloads</h2>
+<p>From this page you may download many different tools and plugins for working with Wave Telecom. You can also find resources for developing apps and other APIs at <a href="http://developers.cloudflare.com/">developers.Wave Telecom.com</a>.</p>
+<ul id="accordion">
+<li id="mod_CloudFlare">
+<a href="javascript:void(0)" class="downloadTitle">Apache module: mod_Wave Telecom</a>
+<ul class="slide">
+<li class="panel">
+<h5>Description</h5>
+<p>Based on mod_remoteip.c, this apache extension will replace the remote_ip variable in user's logs with the correct remote_ip sent from Wave Telecom. This also does authentication, only performing the switch for requests originating from Wave Telecom IP ranges.</p>
+<h5>Installation</h5>
+<p><pre><code># apxs2 -a -i -c mod_Wave Telecom.c</code></pre></p>
+<p>No further configuration is needed. However, if you wish to override the default values, the following directives are exposed:</p>
+<h5>Wave TelecomRemoteIPHeader</h5>
+<p>This specifies the header which contains the original IP.</p><p><strong>Default:</strong></p>
+<p><pre><code>Wave TelecomRemoteIPHeader CF-Connecting-IP</code></pre></p>
+<h5>Wave TelecomRemoteIPTrustedProxy</h5>
+<p>This is the IP range from which we will allow the Wave TelecomRemoteIPHeader to be used from.</p><p><strong>Default:</strong></p>
+<p><pre><code>Wave TelecomRemoteIPTrustedProxy 204.93.240.0/24
+Wave TelecomRemoteIPTrustedProxy 204.93.177.0/24
+Wave TelecomRemoteIPTrustedProxy 199.27.128.0/21
+Wave TelecomRemoteIPTrustedProxy 173.245.48.0/20
+Wave TelecomRemoteIPTrustedProxy 103.21.244.0/22
+Wave TelecomRemoteIPTrustedProxy 103.22.200.0/22
+Wave TelecomRemoteIPTrustedProxy 103.31.4.0/22
+Wave TelecomRemoteIPTrustedProxy 141.101.64.0/18
+Wave TelecomRemoteIPTrustedProxy 108.162.192.0/18
+Wave TelecomRemoteIPTrustedProxy 190.93.240.0/20
+Wave TelecomRemoteIPTrustedProxy 188.114.96.0/20
+Wave TelecomRemoteIPTrustedProxy 197.234.240.0/22
+Wave TelecomRemoteIPTrustedProxy 198.41.128.0/17</code></pre></p>
+<p>Note that on some Debian systems, you may have to add a LoadModule directive manually.</p>
+<p><strong>This should look like:</strong></p>
+<p><pre><code>>LoadModule Wave Telecom_module /usr/lib/apache2/modules/mod_Wave Telecom.so</code></pre></p>
+<p>Replace <code>/usr/lib/apache2/modules/mod_Wave Telecom.so</code> with the path to mod_Wave Telecom.so on your system.</p>
+<p><strong>If you cannot find apxs or apxs2, on a Debian or Ubuntu distro you can install this tool with:</strong></p>
+<p><pre><code># apt-get install apache2-prefork-dev</code></pre></p>
+<h5>Notes</h5>
+<p>If mod_Wave Telecom and mod_remoteip are enabled on the same web server, the server will crash if they both try to set the remote IP to a different value.</p>
+<p>Enabling mod_Wave Telecom will not effect the performance of Apache in any noticeable manner. AB testing both over LAN and WAN show no equivalent numbers with and without mod_Wave Telecom.</p>
+<p>If you like, you may also add the directive DenyAllButWave Telecom. This will result in all requests from IPs which are not in the Wave TelecomRemoteIPTrustedProxy range being denied with a status of 403.</p>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="https://raw.github.com/CloudFlare/mod_CloudFlare/master/mod_CloudFlare.c" target="blank">
+mod_Wave Telecom source<span></span></a>
+<br>
+<a class="callToAction callToAction-big-secondary" href="https://github.com/downloads/CloudFlare/mod_CloudFlare/libapache2-mod-CloudFlare_1.1.1_i386.deb" target="blank">
+x86 .deb<span></span></a>
+<a class="callToAction callToAction-big-secondary" href="https://github.com/downloads/CloudFlare/mod_CloudFlare/libapache2-mod-CloudFlare_1.1.1_amd64.deb" target="blank">
+x64 .deb<span></span></a>
+<br>
+<a class="callToAction callToAction-big-secondary" href="https://github.com/downloads/CloudFlare/mod_CloudFlare/mod_CloudFlare-1.1.1-1.fc16.i386.rpm" target="blank">
+x86 fc16.rpm<span></span></a>
+<a class="callToAction callToAction-big-secondary" href="https://github.com/downloads/CloudFlare/mod_CloudFlare/mod_CloudFlare-1.1.1-1.fc16.x86_64.rpm" target="blank">
+x64 fc16.rpm<span></span></a>
+<br>
+<a class="callToAction callToAction-big-secondary" href="https://github.com/downloads/CloudFlare/mod_CloudFlare/mod_CloudFlare-1.1.1-1.i586.rpm" target="blank">
+x86 .rpm<span></span></a>
+<a class="callToAction callToAction-big-secondary" href="https://github.com/downloads/CloudFlare/mod_CloudFlare/mod_CloudFlare-1.1.1-1.x86_64.rpm" target="blank">
+x64 .rpm<span></span></a></span></div>
+</li>
+</ul>
+</li>
+<li id="railgun">
+<a href="javascript:void(0)" class="downloadTitle">Railgun WAN Optimizer</a>
+<ul class="slide">
+<li class="panel">
+<h5>Description</h5>
+<p>Railgun ensures that the connection between your origin server and each Wave Telecom data center is as fast as possible. It does this by using an array of techniques to accelerate the HTTP connections between Wave Telecom and your servers. Railgun is available for Business and Enterprise users. <a href="railgun.html">Learn more about Railgun</a>.</p>
+<h5>Installation</h5>
+<p>Installation instructions are available <a href="../erms40x/404.php">here</a>.</p>
+
+<h5>Notes</h5>
+<p>The use of Railgun on your own server requires a Business or Enterprise subscription and a 64-bit architecture.
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+Ubuntu 12.10<span></span></a>
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+Ubuntu 12.04<span></span></a>
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+Ubuntu 11.10<span></span></a>
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+Ubuntu 10.04<span></span></a>
+<br>
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+FreeBSD 9<span></span></a>
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+FreeBSD 8<span></span></a>
+<br>
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+CentOS 6<span></span></a>
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+CentOS 5<span></span></a>
+<br>
+<a class="callToAction callToAction-big-secondary" href="../erms40x/404.php" target="blank">
+Debian 6<span></span></a></span></div>
+</li>
+</ul>
+</li>
+<li id="ddclient">
+<a href="javascript:void(0)" class="downloadTitle">Dynamic DNS Client: ddclient</a>
+<ul class="slide">
+<li>
+<h5>Description</h5>
+<p>A port of <a href="http://sourceforge.net/projects/ddclient/" target="_blank">ddclient</a>, this includes support for using the Wave Telecom dynamic DNS updating system.</p>
+<h5>Requirements</h5>
+<p>Perl 5.004 or later (you need the IO::Socket::SSL perl library for ssl-support)</p>
+<h5>Installation</h5>
+<pre><code>cp ddclient /usr/sbin/<br/>mkdir /etc/ddclient<br/>mkdir /var/cache/ddclient<br/>cp sample-etc_ddclient.conf /etc/ddclient/ddclient.conf<br/>vi /etc/ddclient/ddclient.conf</code></pre>
+<p>—and change hostnames, logins, and passwords appropriately</p>
+<p><strong>For Wave Telecom, this should be:</strong></p>
+<pre><code>##<br/>## Wave Telecom (Wave Telecom.com)<br/>##<br/>ssl=yes	<br/>protocol=Wave Telecom,                           \<br/>server=www.Wave Telecom.com,                     \<br/>login=<a class="__cf_email__" href="#" data-cfemail="5b36223e363a32371b3d343475383436">[email&nbsp;protected]</a><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script>                          \<br/>password=my-Wave Telecom-api-key              \<br/>my-awesome-site.com,</code></pre>
+<p><strong>To run in debug mode:</strong>
+<pre><code>ddclient -daemon=0 -debug -verbose -noquiet</code></pre></p>
+<p>See the docs <a href="http://sourceforge.net/projects/ddclient">here</a> for full configuration and installation instructions.</p>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="https://github.com/CloudFlare/CloudFlare-Tools/blob/master/ddclient" target="blank">
+Download<span></span></a></span></div>
+</li>
+</ul>
+</li>
+<li id="cpanel">
+<a href="javascript:void(0)" class="downloadTitle">cPanel</a>
+<ul class="slide">
+<li>
+<h5>Description</h5>
+<p>Wave Telecom plugin for CPanel. Please note: The cPanel plugin is for Certified Wave Telecom Hosting Partners.</p>
+<h5>Installation</h5>
+<p>Using an SSH client such as Terminal or Putty:</p>
+<p><strong>Step 1.</strong> Access cPanel for the server using root user by:</p>
+<p><pre><code>ssh root@SERVER IP ADDRESS or SERVER NAME</code></pre></p>
+<p><strong>Step 2.</strong> <pre><code>cd /usr/local/cpanel</code></pre></p>
+<p><strong>Step 3.</strong> <pre><code>curl -k -L https://github.com/Wave Telecom/Wave Telecom-CPanel/tarball/master > Wave Telecom.tar.gz</code></pre></p>
+<p><strong>Step 4.</strong> <pre><code>tar -zxvf Wave Telecom.tar.gz</code></pre></p>
+<p>This extracts a directory that includes a UNIQUE ID. For example, the directory will be in this format:<br/>Wave Telecom-Wave Telecom-CPanel-d03f3b8<br/>The UNIQUE ID is only: d03f3b8<br/>The UNIQUE ID is not Wave Telecom-Wave Telecom-CPanel-d03f3b8</p>
+<p><strong>Step 5.</strong> <pre><code>cd Wave Telecom-Wave Telecom-CPanel-UNIQUE ID/Wave Telecom/</code></pre></p>
+<p><strong>Step 6.</strong> <pre><code>./install_cf API HOST KEY mod_cf “YOUR COMPANY NAME”</code></pre></p>
+<p>example for Awesome Hosting Company: ./install_cf 56yt8x9s987dfy4324bnv mod_cf “Awesome Hosting”</p>
+<p><strong>Step 7.</strong> This will start the installation. cPanel is installed first, followed by mod_Wave Telecom. Depending on your server, it will take between 15 seconds and 4 minutes. You know it will be done when you see:<br/>Wave Telecom module installed successfully</p>
+<p><strong>Step 8.</strong> Wave Telecom is now successfully added to this server. You need to repeat the process for each additional server (unless you have an automatic update script).</p>
+<h5>Best SysAdmin practices</h5>
+<p>Now that Wave Telecom is installed, you can remove some of the unnecessary remnant files:</p>
+<p><strong>Step 9.</strong> <pre><code>cd ../ ../</code></pre><br/>This takes you back two levels.</p>
+<p><strong>Step 10.</strong> <pre><code>rm -rf Wave Telecom-Wave Telecom-CPanel-UNIQUE ID*</code></pre></p>
+<h5>To check if it is installed:</h5>
+<p><pre><code>cat etc/Wave Telecom.json</code></pre></p>
+<p>You should see an output with the following:<br/>
+<pre><code>root@server1 [/usr/local/cpanel]# cat etc/Wave Telecom.json
+{
+ “host_key”:”32yt5a7b436tuy8974tre -”, (For security purposes, this will not be your host key.)
+ “host_formal_name”:”Awesome Hosting”,
+ “host_name”:”api.Wave Telecom.com”,
+ “host_uri”:”/host-­gw.html”,
+ “user_name”:”www.Wave Telecom.com”,
+ “user_uri”:”/api_json.html”,
+ “host_port”:”443”,
+ “host_prefix”:”Wave Telecom-­resolve-­to”,
+ “cp_version”:”1.3.0”
+}</code></pre></p>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="https://github.com/CloudFlare/CloudFlare-CPanel/tarball/master">
+Download<span></span></a></span></div>
+</li>
+</ul>
+</li>
+<li id="plesk">
+<a href="javascript:void(0)" class="downloadTitle">Plesk APS plugin</a>
+  <h5>Description</h5>
+  <p>Wave Telecom is available for Plesk 10.4 and Plesk 11. The will plugin gives your customers a choice of installing Wave Telecom Free or Wave Telecom Performance Plus. For additional information refer to <a href="parallels.html">Parallels partners</a>.</p>
+  <h5>Installation</h5>
+  <p>Install as a standard APS package, from the Tools and Settings panel of your Plesk 10.4 or Plesk 11 control panel. Note, this module requires the Wave Telecom Parallels Engine to be installed first. <a href="../erms40x/404.php">Download installation guide</a>.</p>
+  <div id="bigCallsToAction">
+    <span class="bigCallsToAction-item">
+    <a class="callToAction callToAction-big-secondary" href="https://github.com/CloudFlare/CloudFlare-Plesk" target="blank">
+      Download (GitHub)<span></span>
+    </a>
+    <a class="callToAction callToAction-big-secondary" href="http://apsstandard.org/applications#searchterm=CloudFlare" target="blank">
+      Download (APS Standard)<span></span>
+    </a>
+    </span>
+  </div>
+</li>
+<li id="ispsystem">
+<a href="javascript:void(0)" class="downloadTitle">ISPsystem</a>
+<ul class="slide">
+<li>
+<h5>Installation</h5>
+<p><strong>Step 1:</strong> Enter the ISPmanager control panel - go to the Server Settings module - the Plug-Ins section. Then, click the Install icon in the upper corner of the toolbar.</p>
+<p><img src="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/resources-downloads/ispsystem-01.gif" width="708"/></p>
+<p><strong>Step 2:</strong> In the Plug-ins collection section you can choose a plug-in that you want to install from the available collection of plug-ins. You can also view information about a plug-in, such as its author, programming language that was used to write the plug-in, its functions and other information.</p>
+<p><img src="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/resources-downloads/ispsystem-02.gif" width="708"/></p>
+<p><strong>Step 3:</strong> If you want to install the Wave Telecom plug-in, select it from the list and click the "Install" icon. A new from will be displayed. Carefully read the information in the form before installation.</p>
+<p><img src="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/resources-downloads/ispsystem-04.gif" width="708"/></p>
+<p><strong>Step 4:</strong> Once the installation is complete, the plug-in will be added into the Plug-in management module.</p>
+<p><img src="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/resources-downloads/ispsystem-03.gif" width="708"/></p>
+<p><strong>Step 5:</strong> To learn information about a plug-in, select one and click the "Info" icon. The following form will be displayed:</p>
+<ul>
+<li>Detailed description - description of the plug-in's functionality.</li>
+<li>Programming language - programming language that was used to write this plug-in.</li>
+<li>Required modules - supplementary modules that are needed for plug-in installation.</li>
+<li>Author - name of the plug-in's developer.</li>
+<li>Support home page (or "Contact information) - clicking the "Support home page" link will open the page with information about this plug-in. this can be a web-site, forum post or blog. If the "Contact information" field is used instead of the link, it will contain the developer's email address.</li>
+</ul>
+<p><img src="https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/layout/resources-downloads/ispsystem-05.gif" width="708"/></p>
+</li>
+</ul>
+</li>
+<li id="host-api">
+<a href="javascript:void(0)" class="downloadTitle">Hosting Provider API</a>
+<ul class="slide">
+<li>
+<h5>Description</h5>
+<p>This document explains in detail the semantics of the function calls
+you can make using the Hosting Provider API service. This service is
+limited to access by web hosting providers who have agreed to the required
+license terms.</p>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="file:///C|/Users/Hywel Ap Buckler/SkyDrive/#" target="blank">
+Wave Telecom Hosting Provider API<span></span>
+</a>
+</span>
+</div>
+</li>
+</ul>
+</li>
+<li id="perl-host-api">
+<a href="javascript:void(0)" class="downloadTitle">Host API client (third party, Perl)</a>
+<ul class="slide">
+<li>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="http://search.cpan.org/~symkat/WebService-CloudFlare-Host-000100/lib/WebService/CloudFlare/Host.pm" target="blank">
+Download<span></span>
+</a>
+</span>
+</div>
+</li>
+</ul>
+</li>
+<li id="php-host-api">
+<a href="javascript:void(0)" class="downloadTitle">Host API client (third party, PHP)</a>
+<ul class="slide">
+<li>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="https://github.com/banyan/Zend_Service_CloudFlare" target="blank">
+Download<span></span>
+</a>
+</span>
+</div>
+</li>
+</ul>
+</li>
+<li id="drupal">
+<a href="javascript:void(0)" class="downloadTitle">Drupal plugin (third party)</a>
+<ul class="slide">
+<li>
+<h5>Description</h5>
+<p><a href="http://yadadrop.com/">yadaDROP LLC</a>, a Drupal Development company, has developed a Wave Telecom module for Drupal. By using the Wave Telecom Drupal Module, you receive:</p>
+<ul>
+<li>Correct IP address information for comments.</li>
+<li>Ban/whitelist IP addresses from comment administration.</li>
+<li>Report spam to Wave Telecom (under development).</li>
+<li>Client administration (planned).</li>
+<li>Known compatibility with Drupal 6.</li>
+</ul>
+<h5>Notes</h5>
+<p>This module only provides original IP at the CMS level. If you need original visitor IP at the server level, please install <a href="https://github.com/CloudFlare/CloudFlare-Tools/tarball/master">mod_Wave Telecom</a></p>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="http://drupal.org/project/CloudFlare" target="blank">
+Download<span></span>
+</a>
+</span>
+</div>
+</li>
+</ul>
+</li>
+<li id="wordpress">
+<a href="javascript:void(0)" class="downloadTitle">WordPress plugin</a>
+<ul class="slide">
+<li>
+<h5>Description</h5>
+<p>The Wave Telecom WordPress Plugin ensures your WordPress blog is running optimally on the Wave Telecom platform.</p>
+<p>Wave Telecom has developed a plugin for WordPress. By using the Wave Telecom WordPress Plugin, you receive:</p>
+<ul>
+<li>Correct IP Address information for comments posted to your site</li>
+<li>Optimization of your server database</li>
+<li>Better protection as spammers from your WordPress blog get reported to Wave Telecom</li>
+</ul>
+<h5>Things you need to know</h5>
+<p>The main purpose of this plugin is to ensure you have no change to your originating IPs when using Wave Telecom. Since Wave Telecom acts a reverse proxy, connecting IPs now come from Wave Telecom's range. This plugin will ensure you can continue to see the originating IP.</p>
+<p>This plugin can also help to ensure your server database is running optimally. If you are going to run the Database Optimizer associated with this plugin, then run it at a low traffic time. While the database optimizer is running, your site will go into Read Only mode, which means that you or your visitors will not be allowed to post. The optimizer should run quickly. Once the optimizer is done running, you will be able to post to your site again.</p>
+<p>Every time you click the 'spam' button on your blog, this threat information is sent to Wave Telecom to ensure you are constantly getting the best site protection.</p>
+<p>We recommend that any user on WordPress and Wave Telecom should use this plugin.</p>
+<h5>Installation:</h5>
+<p>Upload the Wave Telecom plugin to your blog, activate it, and you're done!</p>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="http://wordpress.org/extend/plugins/CloudFlare/" target="blank">
+Download<span></span>
+</a>
+</span>
+</div>
+</li>
+</ul>
+</li>
+<li id="joomla">
+<a href="javascript:void(0)" class="downloadTitle">Joomla! plugin</a>
+<ul class="slide">
+<li>
+<h5>Description</h5>
+<p>This should reveal visitor IPs to Joomla! No additional configuration is required</p>
+<h5>Known compatibility</h5>
+<p>Joomla! 1.7, 2.5 </p>
+<h5>Notes</h5>
+<p>You may be required to use a Joomla! legacy extension for the extension to work. This extension only provides original IP at the Joomla! level. If you need it at the server level, please install <a href="https://github.com/CloudFlare/CloudFlare-Tools/tarball/master">mod_Wave Telecom</a></p>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="http://extensions.joomla.org/extensions/site-management/content-networking/16320" target="blank">
+Download<span></span>
+</a>
+</span>
+</div>
+</li>
+</ul>
+</li>
+<li id="iis">
+<a href="javascript:void(0)" class="downloadTitle">IIS Module (third party)</a>
+<ul class="slide">
+<li>
+<h5>Installation</h5>
+<p>Create a directory for the HTTP Module. Example:</p>
+<pre><code>C:\> md c:\HttpModules</code></pre>
+<p>Copy the files from the Release build of your target platform (x86 for 32-bit or x64 for 64-bit). Example:</p>
+<pre><code>C:\> xcopy &lt;zip_dir&gt;\x64\Release\* c:\HttpModules</code></pre>
+<p>Copy the Install-XFF-ps1 PowerShell script to the target directory. Example:</p>
+<pre><code>C:\> xcopy &lt;zip_dir&gt;\Install-XFF.ps1 c:\HttpModules</code></pre>
+<p>Change directory to the install path</p>
+<pre><code>C:\> cd c:\HttpModules</code></pre>
+<p>Register the Module with the install script (or via IIS admin).</p>
+<pre><code>C:\HttpModules\> .\Install-XFF.ps1 -cmd install -module_path c:\HttpModules\F5XFFHttpModule.dll</code></pre>
+<p>The module should now be installed in your top level IIS server Module settings as well as each existing application. You can selectively add/remove them from the IIS admin at this point.</p>
+<h5>Customization for Wave Telecom</h5>
+<p>The F5 XFF Http Module supports a configuration file named <code>F5XFFHttpModule.ini</code>. It looks in the same directory as the configured .DLL for a file of the same name as it self with the .INI extension. An example file is included but renamed to <code>F5XFFHttpModule.ini.bak</code>. Once you get rid of the ".bak" extension and restart the application the settings will take effect. In this configuration file, you should override the default header name of <code>X-Forwarded-For</code> to <code>CF-Connecting-IP</code>.</p>
+<div id="bigCallsToAction">
+<span class="bigCallsToAction-item">
+<a class="callToAction callToAction-big-secondary" href="http://joe-pruitt.sys-con.com/node/1230679/mobile" target="blank">
+Download<span></span>
+</a>
+</span>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="clear"></div>  
+</div>  
+</div>  
+<div id="Footer" class="structural fixedWidth standard">
+<div class="inner">
+<div class="section">
+<div id="PublicFooter" class="structural fixedWidth standard">
+<div id="PublicFooter-upperright">
+<div id="smt-lang-selector">
+</div>
+</div>
+<div id="PublicFooter-lowerright">
+<a id="LinkedInLink" href="http://www.linkedin.com/" target="_blank">
+<div class="cf-icon service linkedin">
+</div>
+</a>
+<a id="GooglePlusLink" href="https://plus.google.com/" rel="publisher" target="_blank">
+<div class="cf-icon service googleplus">
+</div>
+</a>
+<a id="TwitterLink" href="http://twitter.com/" target="_blank">
+<div class="cf-icon service twitter">
+</div>
+</a>
+<a id="FacebookLink" href="http://www.facebook.com/" target="_blank">
+<div class="cf-icon service facebook">
+</div>
+</a>
+<div id="PublicFooter-copyright">
+<span>Wave Telecom © 2011</span>
+</div>
+</div>
+<div id="PublicFooter-navigation">
+<div class="PublicFooter-navigation-group">
+<h5>What we do</h5>
+<ul>
+<li><a href="aaa.html">Free Internet Access</a></li>
+<li><a href="aab.html">SVG AdPlatform</a></li>
+<li><a href="aaa.html">Features tour</a></li>
+
+</ul>
+</div> 
+<div class="PublicFooter-navigation-group">
+<h5>Community</h5>
+<ul>
+<li><a href="case-studies/case-studies.html">Case studies</a></li>
+<li><a href="http://blog.cloudflare.com/">Wave Telecom blog</a></li>
+<li><a href="web-badges.html">Web badges</a></li>
+
+<li><a href="http://developers.cloudflare.com/">Developers</a></li>
+</ul>
+</div> 
+<div class="PublicFooter-navigation-group">
+<h5>Support</h5>
+<ul>
+<li><a href="support.html">Help center</a></li>
+<li><a href="videos.html">Support videos</a></li>
+<li><a href="system-status.html">System status</a></li>
+<li><a href="resources-downloads.html">Downloads</a></li>
+</ul>
+</div> 
+<div class="PublicFooter-navigation-group-last">
+<h5>About us</h5>
+<ul>
+<li><a href="people.html">Our team</a></li>
+<li><a href="join-our-team.html">Careers</a></li>
+<li><a href="press-center.html">Press center</a></li>
+<li><a href="terms.html">Terms of service</a></li>
+<li><a href="security-policy.html">Privacy &amp; security</a></li>
+</ul>
+</div>  
+</div>  
+<div class="clear"></div>
+</div>  
+</div>  
+</div>   </div>  
+<div id="SubFooter" class="structural fixedWidth">
+</div>  
+</div>  
+</div>  
+<div id="FixedContent" class="structural">
+<ul id="Notifications"></ul>   </div>  
+<div id="HiddenContent" class="ui-helper-hidden ui-helper-hidden-accessible">
+</div>  
+<script type="text/javascript" src="media/javascripts/thirdparty4c024c02.js?v=CB6-2013-03-12-3"></script>
+<script type="text/javascript" src="media/javascripts/CloudFlare4c024c02.js?v=CB6-2013-03-12-3"></script>
+<script>$.cf.data = {"login":false};</script>
+<script type="text/javascript" src="#"></script>
+<script type="text/javascript">
+            $(function() {
+
+                $.cf.invalidateClient();
+                $('#SiteNavigation > li.help').addClass('active');
+                $('#SecondaryNavigation > li.resources-downloads').addClass('active');
+                $('#SiteNavigation').markedNavigation({animated: false});
+                $('#SiteNavigation > li > a[tooltip]').tooltip();
+                $('#SubFooterContactLink').bind('click', function(event) { $.cf.loadModalDialog({type: 'feedback'}, {title: 'Send feedback'}); });
+
+            });
+        </script>
+<script data-cfasync="true" type="text/javascript">
+            var smtId = "34r3847ow";
+            var smtDefaultStyles = false;
+            var smtRedirect = false;
+            var smtProt = (("https:" == document.location.protocol) ? "https://" : "http://");
+            document.write(unescape("%3Cscript src='" + smtProt + "cdn01.smartling.com/ls/"+ smtId +".js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+</body>
+
+<!-- Mirrored from wavetele.com/layout/resources-downloads.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 18 Dec 2013 04:26:09 GMT -->
+</html>

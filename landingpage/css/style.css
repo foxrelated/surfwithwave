@@ -1,0 +1,521 @@
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+/* ############################################## */
+/* ######### [ COMPASS ] ######################## */
+/* ############################################## */
+/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+/* line 53, ../scss/style.scss */
+#shareholder_info {
+  background: #49c8f5;
+  color: #fff;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* line 61, ../scss/style.scss */
+#shareholder_info span {
+  margin: 0 15px;
+}
+
+/* line 65, ../scss/style.scss */
+#logo {
+  float: left;
+  height: 75px;
+  width: 200px;
+  display: block;
+  overflow: hidden;
+}
+/* line 72, ../scss/style.scss */
+#logo img {
+  margin-top: -10px;
+}
+
+/* line 76, ../scss/style.scss */
+#main_nav {
+  float: right;
+  height: 55px;
+  border-left: 1px solid #2c2f31;
+}
+/* line 81, ../scss/style.scss */
+#main_nav li {
+  display: block;
+  height: 55px;
+  line-height: 55px;
+  float: left;
+  border-right: 1px solid #2c2f31;
+  font-weight: 700;
+}
+/* line 89, ../scss/style.scss */
+#main_nav li a {
+  font-size: 120%;
+  font-weight: 700;
+  display: block;
+  height: 100%;
+  padding: 0 20px;
+  color: #49c8f5;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 98, ../scss/style.scss */
+#main_nav li a:hover {
+  background: #313436;
+}
+
+/* line 104, ../scss/style.scss */
+.nav_button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  margin: 10px 0 0 15px;
+  float: right;
+}
+
+/* line 115, ../scss/style.scss */
+#nav_get_started {
+  color: #fff;
+  font-weight: bold;
+  background: #68C70A;
+  border: 1px solid #54a008;
+  margin-top: -4px;
+}
+/* line 120, ../scss/style.scss */
+#nav_get_started:hover {
+  background: #5baf09;
+}
+
+/* line 124, ../scss/style.scss */
+#nav_login {
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #45484b;
+  background: #45484b;
+  margin-top: -4px;
+}
+/* line 129, ../scss/style.scss */
+#nav_login:hover {
+  background: #383b3e;
+}
+
+/* ############################################# */
+/* ############ [ COMMON ] ##################### */
+/* ############################################# */
+/* line 138, ../scss/style.scss */
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* ############################################# */
+/* ############ [ CTA AREA ] ################### */
+/* ############################################# */
+/* Font family would obvious be global, but don't want to overwrite other stylesheet's defaults in this demo... */
+/* line 149, ../scss/style.scss */
+#cta {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: url(../img/bg/1400.jpg) #73a7bd;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 324px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: table;
+  //border-bottom: 3px solid #000;
+}
+
+/* line 161, ../scss/style.scss */
+#tagline_wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 165, ../scss/style.scss */
+#tagline {
+  font-size: 55px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  background: url(../img/wifi_icon.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 70px;
+  margin-top: -60px;
+  height: 50px;
+}
+
+/* ############################################# */
+/* ##### [ BUTTONS ] ########################### */
+/* ############################################# */
+/* line 180, ../scss/style.scss */
+.landing_button {
+  color: #fff;
+  padding: 0 20px;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  border: 2px solid #1588B8;
+  background: #30b5ec;
+/*  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #64d0f6), color-stop(100%, #3eaad1));
+  background-image: -webkit-linear-gradient(top, #64d0f6 0%, #3eaad1 100%);
+  background-image: -moz-linear-gradient(top, #64d0f6 0%, #3eaad1 100%);
+  background-image: -o-linear-gradient(top, #64d0f6 0%, #3eaad1 100%);
+  background-image: linear-gradient(top, #64d0f6 0%, #3eaad1 100%);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.44), -20px 2px 15px 0px rgba(255, 255, 255, 0.2) inset;
+  -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.44), -20px 2px 15px 0px rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.44), -20px 2px 15px 0px rgba(255, 255, 255, 0.2) inset;*/
+}
+
+/* line 195, ../scss/style.scss */
+input.landing_button {
+  line-height: 30px;
+}
+
+/* ############################################# */
+/* ##### [ DARKENED INFO BOXES ] ############### */
+/* ############################################# */
+/* line 203, ../scss/style.scss */
+.darken {
+  background: #F5F5F5;
+  border: 1px dashed #ccc;
+  padding: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* ############################################# */
+/* ############ [ INFO BOXES ] ################# */
+/* ############################################# */
+/* line 214, ../scss/style.scss */
+#info_boxes {
+  margin-top: -77px;
+}
+
+/* line 217, ../scss/style.scss */
+#info_boxes:after {
+  content: " ";
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+/* line 223, ../scss/style.scss */
+.info_box {
+  border: 1px solid #ccc;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 312px;
+  float: left;
+  font-size: 16px;
+  text-align: left;
+}
+/* line 233, ../scss/style.scss */
+.info_box .img {
+  width: 258px;
+  height: 148px;
+  border: 1px dashed #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 -1px 2px 1px rgba(100, 100, 100, 0.1) inset;
+  -moz-box-shadow: 0 -1px 2px 1px rgba(100, 100, 100, 0.1) inset;
+  box-shadow: 0 -1px 2px 1px rgba(100, 100, 100, 0.1) inset;
+}
+
+/* line 241, ../scss/style.scss */
+.info_box:first-child {
+  margin-right: 30px;
+}
+
+/* line 244, ../scss/style.scss */
+.info_box:last-child {
+  float: right;
+}
+
+/* line 247, ../scss/style.scss */
+.info_box_title {
+  height: 35px;
+  line-height: 35px;
+  color: #181919;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  background: #EDEDED;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+}
+
+/* line 256, ../scss/style.scss */
+.info_box_title span {
+  display: inline-block;
+  height: 28px;
+  padding-top: 6px;
+  width: 35px;
+  margin-right: 10px;
+  text-align: center;
+  border-right: 1px dashed #ccc;
+  
+  background: black;
+color: white;
+border-radius: 50%;
+transform: scale(2,2);
+-webkit-transform: scale(1.5,1.5);
+border-right: none;
+top: -19px;
+position: relative;
+left: -15px;
+  
+}
+
+/* line 264, ../scss/style.scss */
+.info_box_cont {
+  padding: 15px;
+  height: 200px;
+}
+/* line 268, ../scss/style.scss */
+.info_box_cont .darken {
+  height: 170px;
+}
+
+/* line 272, ../scss/style.scss */
+#create_profile .img {
+  background-image: url('/register_forum.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ######## [ Signup Form ] ######## */
+/* line 279, ../scss/style.scss */
+#signup {
+  color: #6c6c6c;
+}
+
+/*
+	Using a DIV as the submit button just for demo purposes. There are
+	global styles on input[type=submit] that didn't seem worth overriding
+	for the demo.
+*/
+/* line 291, ../scss/style.scss */
+#upgrade_router .img {
+  /*background-image: url('/img/info_box/upgrade_router.jpg?1387857021');*/
+}
+
+/* line 295, ../scss/style.scss */
+#free_internet_wrap {
+  text-align: center;
+  font-size: 22px;
+  color: #6c6c6c;
+  background:url(/landingpage/enjoy_free_internet.jpg);
+  background-size: cover;
+  background-position: center;
+  text-indent: -99999px;
+}
+
+/* line 300, ../scss/style.scss */
+#free_internet_wrap:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+}
+
+/* line 307, ../scss/style.scss */
+#free_internet {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+/* line 312, ../scss/style.scss */
+#free_internet span {
+  display: block;
+  color: #49C8F5;
+}
+
+/* ############################################# */
+/* ############ [ GET STARTED ] ################ */
+/* ############################################# */
+/* line 321, ../scss/style.scss */
+#get_started_bottom {
+  padding: 45px 0 30px;
+  text-align: center;
+}
+/* line 325, ../scss/style.scss */
+#get_started_bottom .landing_button {
+  font-size: 170%;
+  padding: 0 35px;
+  height: 55px;
+  line-height: 55px;
+background: #68C70A;
+border: 1px solid #54a008;
+}
+
+/* ############################################# */
+/* ############ [ NEED MORE INFO ] ############# */
+/* ############################################# */
+/* line 337, ../scss/style.scss */
+#need_more_info_wrap {
+  width: 100%;
+  border-top: 3px solid white;
+  margin: 30px 0 0px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+#cp{
+  width: 100%;
+  border-top: 3px solid white;
+  margin: 30px 0 0px;
+  padding-bottom: 30px;
+  text-align: right;
+  background-color: white;
+ } 
+
+/* line 343, ../scss/style.scss */
+#need_more_info {
+  width: 900px;
+  font-size: 110%;
+  font-weight: bold;
+  color: #000;
+  margin: -22px auto 0 auto;
+  padding: 10px;
+}
+
+/* line 351, ../scss/style.scss */
+#need_more_info a {
+  color: #49C8F5;
+  border-bottom: 1px dashed #49C8F5;
+}
+
+/* line 355, ../scss/style.scss */
+#need_more_info a:hover {
+  /*border-bottom: none;*/
+}
+#PublicFooter-copyright {
+	float:right;
+	clear:right;
+	margin:9px 0 0 0
+}
+#PublicFooter-copyright>span {
+	font-size:12px;
+	color:#808080
+}
+#PublicFooter-navigation {
+	float:left
+}
+
+/* ############################################# */
+/* ############ [ REGISTER FORM ] ############## */
+/* ############################################# */
+/* line 365, ../scss/style.scss */
+#birthday select,
+#birthday .chosen-container {
+  float: left;
+  margin-right: 10px;
+}
+/* line 369, ../scss/style.scss */
+#birthday label {
+  float: left;
+  margin-top: 6px;
+  width: 100%;
+  clear: both;
+}
+
+/* ############################################# */
+/* ############ [ STANDARD FORMS ] ############# */
+/* ############################################# */
+/* line 382, ../scss/style.scss */
+.form h1 {
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+/* line 386, ../scss/style.scss */
+.form .txt {
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1) inset;
+  width: 100%;
+  padding: 10px;
+}
+/* line 393, ../scss/style.scss */
+.form label {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 4px 0 15px;
+  display: block;
+  color: #666;
+}
+
+/* ############################################# */
+/* ########### [ FOOTER PLACEHOLDER ] ########## */
+/* ############################################# */
+/*
+	The site where I got the footer earlier is down: http://excellencesys.com/demo.html
+	Because this is just copied/pasted code anyway, I throw in a footer image as a placeholder
+	from a screenshot I'd taken earlier.
+*/
+/* line 412, ../scss/style.scss */
+#footer_placeholder {
+  background: url(../img/footer_placeholder.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 251px;
+  width: 100%;
+background-color: white;
+}
+
+#need_more_info_wrap #need_more_info {
+border: 17px solid white;
+position: relative;
+top: -29px;
+padding: 20px;
+}
+#need_more_info_wrap #need_more_info a {
+color: black;
+background: #49C8F5;
+color: white;
+margin-left: 20px;
+}

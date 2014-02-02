@@ -1,0 +1,1 @@
+$(document).ready(function(e){$(".js-get_started").click(function(e){e.preventDefault();$("#register").reveal()});$(".js-login").click(function(e){e.preventDefault();$("#login").reveal()});$("#birthday select, #gender").chosen()});

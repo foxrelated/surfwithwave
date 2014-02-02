@@ -1,0 +1,816 @@
+body {
+  background: #FFF;
+  color: #fff;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+a {
+  color: #29f;
+}
+
+#ipad, #iphone, #iphone5, #windows_surface, #windows_phone {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+#windows_surface.landscape {
+  background: url('http://www.wavetele.info/windows_surface.png');
+  background-size: contain;
+  background-position: center center;
+  width: 1108px;
+  height: 852px;
+  position:relative;
+  background-repeat: no-repeat;
+}
+#windows_surface.portrait {
+  background: url('http://www.wavetele.info/windows_surface-portrait.png');
+  background-size: contain;
+  background-position: center center;
+  width: 852px;
+  height: 1108px;
+  position:relative;
+  background-repeat: no-repeat;
+}
+#windows_phone.landscape {
+  background: url('http://www.wavetele.info/windows_phone-landscape.png');
+  width: 713px;
+  height: 365px;
+  position:relative;
+  background-repeat: no-repeat;
+}
+#windows_phone.portrait {
+  background: url('http://www.wavetele.info/windows_phone.png');
+  width: 365px;
+  height: 663px;
+  position:relative;
+  background-repeat: no-repeat;
+}
+
+
+#ipad.landscape {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/landscape.png');
+  width: 1108px;
+  height: 852px;
+  position:relative;
+}
+
+#ipad.portrait {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/portrait.png');
+  width: 852px;
+  height: 1108px;
+  position:relative;
+}
+
+#iphone.landscape {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone_landscape.png');
+  width: 713px;
+  height: 365px;
+  position:relative;
+}
+
+#iphone.portrait {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone_portrait.png');
+  width: 365px;
+  height: 713px;
+  position:relative;
+}
+
+#iphone5.landscape {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone5_landscape.png');
+  width: 801px;
+  height: 365px;
+  position:relative;
+}
+
+#iphone5.portrait {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone5_portrait.png');
+  width: 365px;
+  height: 801px;
+  position:relative;
+}
+
+#ipad #kbd {
+  position: absolute;
+  left: 42px;
+  top: 106px;
+  display: none;
+  z-index: 10;
+}
+
+#iphone #kbd {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+
+#iphone5 #kbd {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+
+#ipad.landscape #kbd {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/landscape_kbd.png');
+  width: 1024px;
+  height: 704px;
+}
+
+#ipad.portrait #kbd {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/portrait_kbd.png');
+  width: 768px;
+  height: 960px;
+}
+
+#iphone.landscape #kbd {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone_landscape_kbd.png');
+  left: 118px;
+  top: 101px;
+  width: 480px;
+  height: 240px;
+}
+
+#iphone.portrait #kbd {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone_portrait_kbd.png');
+  left: 24px;
+  top: 198px;
+  width: 320px;
+  height: 400px;
+}
+
+#iphone5.landscape #kbd {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone5_landscape_kbd.png');
+  left: 118px;
+  top: 101px;
+  width: 568px;
+  height: 240px;
+}
+
+#iphone5.portrait #kbd {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone5_portrait_kbd.png');
+  left: 24px;
+  top: 198px;
+  width: 320px;
+  height: 488px;
+}
+
+#windows_surface #url {
+  position: absolute;
+left: 248px;
+width: 221px;
+bottom: 77px;
+height: 25px;
+  background: #fff;
+  border: none;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+#windows_surface.landscape #url {
+    left: 166px;
+    width: 638px;
+    bottom: 159px;
+}
+#windows_phone #url {
+  position: absolute;
+  left: 52px;
+  top: 62px;
+  width: 135px;
+  background: #fff;
+  border: none;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+#windows_phone.landscape #url {
+    left: 71px !important;
+    top: 42px !important;
+    width: 324px !important;
+}
+#ipad #url {
+  position: absolute;
+  left: 235px;
+  top: 73px;
+  height: 21px;
+  background: #fff;
+  border: none;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+#iphone #url {
+  position: absolute;
+  height: 21px;
+  background: #fff;
+  border: none;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+#iphone5 #url {
+  position: absolute;
+  height: 21px;
+  background: #fff;
+  border: none;
+  font-family: 'Droid Sans', 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std', 'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+#ipad.landscape #url {
+  width: 512px;
+}
+
+#ipad.portrait #url {
+  width: 350px;
+}
+
+#iphone.landscape #url {
+  left: 130px;
+  top: 67px;
+  width: 292px;
+}
+
+#iphone.portrait #url {
+  left: 35px;
+  top: 164px;
+  width: 188px;
+}
+
+#iphone5.landscape #url {
+	left: 130px;
+	top: 67px;
+	width: 353px;
+}
+
+#iphone5.portrait #url {
+  left: 35px;
+  top: 164px;
+  width: 188px;
+}
+
+#windows_surface #frame {
+    border: none;
+    background: #fff;
+    position: absolute;
+    left: 156px;
+    top: 73px;
+  
+}
+
+#windows_phone #frame {
+  border: none;
+  background: #fff;
+  position: absolute;
+  left: 42px;
+  top: 138px;
+  
+}
+
+#ipad #frame {
+  border: none;
+  background: #fff;
+  position: absolute;
+  left: 42px;
+  top: 138px;
+  
+}
+
+#iphone #frame {
+  border: none;
+  background: #fff;
+  position: absolute;
+}
+
+#iphone5 #frame {
+  border: none;
+  background: #fff;
+  position: absolute;
+}
+
+#windows_surface.landscape #frame {
+    width: 959px;
+    height: 440px;
+    left: 74px;
+    top: 157px;
+}
+#windows_surface.portrait #frame {
+    width: 543px;
+    height: 848px;
+}
+
+
+#windows_phone.landscape #frame {
+    width: 475px;
+/*    height: 174px;*/
+    height: 239px;
+    left: 52px;
+    top: 73px;
+}
+#windows_phone.portrait #frame {
+    width: 285px;
+    height: 385px;
+    left: 33px;
+    top: 94px;
+}
+#ipad.landscape #frame {
+	width: 1024px;
+        height: 638px;
+}
+#ipad.portrait #frame {
+	width: 768px;
+	height: 900px;
+}
+#ipad.portrait .minmenudiv{position:absolute; top:138px; width:768px; left:42px}
+#ipad.portrait #menu{ height:875px !important;}
+
+#ipad.landscape .minmenudiv{position:absolute; top:138px; width:1024px; left:42px;}
+#ipad.landscape #menu{ height:625px !important;}
+
+
+#iphone.landscape #frame {
+    width: 480px;
+    /*height: 174px;*/
+    height: 208px;
+    left: 118px;
+    top: 101px;
+}
+#iphone.portrait #frame {
+    width: 320px;
+    height: 325px;
+    left: 24px;
+    top: 198px;
+}
+#iphone.portrait .minmenudiv{position:absolute; top:198px; width:320px; left:24px;}
+#iphone.portrait #menu{ height:327px !important;}
+
+#iphone.landscape .minmenudiv{position:absolute; top:101px; width:480px; left:118px;}
+#iphone.landscape #menu{ height:180px !important;}
+
+#iphone5.landscape #frame {
+    width: 568px;
+    /*height: 174px;*/
+    height: 208px;
+    left: 118px;
+    top: 101px;
+}
+#iphone5.portrait #frame {
+    width: 320px;
+    /*height: 412px;*/
+    height: 388px;
+    left: 24px;
+    top: 198px;
+}
+#iphone5.portrait .minmenudiv{position:absolute; top:198px; width:320px; left:24px;}
+#iphone5.portrait #menu{ height:415px !important;}
+
+#iphone5.landscape .minmenudiv{position:absolute; top:101px; width:568px; left:118px;}
+#iphone5.landscape #menu{ height:175px !important;}
+
+.info {
+  margin: 16px;
+  text-align: center;
+}
+
+.buttons {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  width: 48px;
+  height: 48px;
+  margin: 8px;
+  display: block;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+	#iphone5svg.svgportrait img, #iphone5svg.svglandscape img{
+		width:120px;
+	}
+	#iphone5svg.svgportrait{
+		position:absolute;
+		bottom:24.6%;
+		left:0px;
+		height:33px;
+		width:100%;
+		margin:0px auto;
+	}
+	
+	#iphone5svg.svglandscape{
+		position:absolute;
+		bottom:25.4%;
+		left:0px;
+		height:33px;
+		width:100%;
+		margin:0px auto;
+	}
+	
+	#iphonesvg.svgportrait img, #iphonesvg.svglandscape img{
+		width:120px;
+	}
+	
+	#iphonesvg.svgportrait{
+		position:absolute;
+		bottom:27%;
+		left:0px;
+		height:33px;
+		width:100%;
+		margin:0px auto;
+	}
+	
+	#iphonesvg.svglandscape{
+		position:absolute;
+		bottom:25.4%;
+		left:0px;
+		height:33px;
+		width:100%;
+		margin:0px auto;
+	}
+
+	#ipadsvg.svgportrait img, #ipadsvg.svglandscape img{
+		width:250px;
+	}
+	#ipadsvg.svgportrait{
+		position:absolute;
+		bottom:12.6%;
+		left:0px;
+		height:33px;
+		width:100%;
+		margin:0px auto;
+	}
+	
+	#ipadsvg.svglandscape{
+		position:absolute;
+		bottom:15.7%;
+		left:90px;
+		height:33px;
+		width:100%;
+		margin:0px auto;
+	}
+
+.button#rotate {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/rotate.png');
+}
+
+.button#to_ipad {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/button.png');
+}
+
+.button#to_iphone {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone_button.png');
+}
+
+.button#to_iphone5 {
+  background: url('https://dl.dropboxusercontent.com/u/47807983/wavetele.com/images/iphone5_button.png');
+}
+
+.button#to_windows_surface {
+  background: url('http://www.wavetele.info/windows_surface_icon.png');
+  background-repeat: no-repeat;
+}
+.button#to_windows_phone {
+  background: url('http://www.wavetele.info/windows_phone_icon.png');
+  background-repeat: no-repeat;
+}
+.button#to_android_phone {
+  background: url('http://www.wavetele.info/android_phone_icon.png');
+  background-repeat: no-repeat;
+}
+.clear {
+  clear: both;
+}
+
+#frame::-webkit-scrollbar { width: 4px; height: 4px; background: transparent; }
+#frame::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.75); -webkit-border-radius: 4px; border-radius: 4px; width: 4px; height: 4px; }
+
+
+
+        
+        #iphone5.portrait .svg_ad, #iphone.portrait .svg_ad {
+                position: absolute;
+                bottom: 159px;
+                left: 24px;
+                width: 320px;
+                text-align: center;
+        }
+        #iphone5.landscape .svg_ad {
+                display: none;
+                position: absolute;
+                bottom: 56px;
+                left: 118px;
+                width: 568px;
+                text-align: center;
+        }
+        #iphone.landscape .svg_ad {
+                display: none;
+                position: absolute;
+                bottom: 56px;
+                left: 118px;
+                width: 480px;
+                text-align: center;
+        }
+        #ipad.portrait .svg_ad {
+                position: absolute;
+                bottom: 42px;
+                left: 42px;
+                width: 768px;
+                text-align: center;
+        }
+        #ipad.landscape .svg_ad {
+                position: absolute;
+                bottom: 42px;
+                left: 42px;
+                width: 1027px;
+                text-align: center;
+        }
+        
+        
+        #windows_surface.portrait .svg_ad {
+            position: absolute;
+            bottom: 114px;
+            left: 155px;
+            width: 544px;
+            text-align: center;
+        }
+        #windows_surface.landscape .svg_ad {
+            position: absolute;
+            bottom: 194px;
+            left: 74px;
+            width: 961px;
+            text-align: center;
+        }
+        #windows_phone.portrait .svg_ad {
+            position: absolute;
+            bottom: 134px;
+            left: 32px;
+            width: 284px;
+            text-align: center;
+        }
+        #windows_phone.landscape .svg_ad {
+                display: none;
+                position: absolute;
+                bottom: 56px;
+                left: 118px;
+                width: 480px;
+                text-align: center;
+        }
+        
+        /* Begin SVG Ad Animation cSS */
+        
+        @keyframes angel_default_slide_iphone_portrait {
+            0% { top: 0px;}
+            50% { top: -30px;}
+            100% { top: 0px;}
+        }
+        @-webkit-keyframes angel_default_slide_iphone_portrait {
+            0% { top: 0px;}
+            50% { top: -30px;}
+            100% { top: 0px;}
+        }
+        @-moz-keyframes angel_default_slide_iphone_portrait {
+            0% { top: 0px;}
+            50% { top: -30px;}
+            100% { top: 0px;}
+        }
+        
+        @keyframes angel_default_slide_ipad_portrait {
+            0% { top: -50px;}
+            50% { top: -100px;}
+            100% { top: -50px;}
+        }
+        @-webkit-keyframes angel_default_slide_ipad_portrait {
+            0% { top: -50px;}
+            50% { top: -100px;}
+            100% { top: -50px;}
+        }
+        @-moz-keyframes angel_default_slide_ipad_portrait {
+            0% { top: -50px;}
+            50% { top: -100px;}
+            100% { top: -50px;}
+        }
+        
+        @keyframes word_fade_out {
+            0% { opacity: 1;}
+            50% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+        @-webkit-keyframes word_fade_out {
+            0% { opacity: 1;}
+            50% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+        @-moz-keyframes word_fade_out {
+            0% { opacity: 1;}
+            50% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+        @keyframes word_fade_in {
+            0% { opacity: 0;}
+            55% { opacity: 1;}
+            100% { opacity: 0;}
+        }
+        @-webkit-keyframes word_fade_in {
+            0% { opacity: 0;}
+            55% { opacity: 1;}
+            100% { opacity: 0;}
+        }
+        @-moz-keyframes word_fade_in {
+            0% { opacity: 0;}
+            55% { opacity: 1;}
+            100% { opacity: 0;}
+        }
+        
+        .svg_ad, .svg_ad #angel_girl, .svg_ad #lynx_can, .svg_ad h2, .svg_ad h3 {
+            -webkit-transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -moz-transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -o-transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -webkit-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -moz-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -o-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        }
+        .svg_ad {
+            background: black url(/bg_light.svg);
+            background-size: 100%;
+            overflow: hidden;
+            height: 7%;
+            min-height: 50px;
+            z-index: 1;
+        }
+        .svg_ad #angel_girl {
+            position: absolute;
+            right: -320px;
+            z-index: 2;
+            animation: angel_default_slide_iphone_portrait 10s infinite;
+            -webkit-animation: angel_default_slide_iphone_portrait 10s infinite;
+        }
+        .svg_ad #lynx_can {
+            position: absolute;
+            left: 2%;
+            bottom: -25px;
+            z-index: 1;
+            width: 50px;
+            height: 130px;
+        }
+        .svg_ad h2, .svg_ad h3 {
+            font-size: 22px;
+            position: absolute;
+            left: 20%;
+            color: white;
+            font-family: 'Alegreya Sans SC', sans-serif;
+        }
+        
+        .svg_ad h2 {
+            animation: word_fade_out 10s infinite;
+            -webkit-animation: word_fade_out 20s infinite;
+        }
+        .svg_ad h3 {
+            font-size: 18px;
+            line-height: 20px;
+            animation: word_fade_in 10s infinite;
+            -webkit-animation: word_fade_in 20s infinite;
+        }
+        
+        #ipad .svg_ad #angel_girl{
+            width: 940px;
+            height: 1590px;
+            right: -580px;
+            animation: angel_default_slide_ipad_portrait 10s infinite;
+            -webkit-animation: angel_default_slide_ipad_portrait 10s infinite;
+        }
+        #ipad .svg_ad.active #angel_girl{
+            animation: none;
+            -webkit-animation: none;
+           /* width: 751px;
+            height: 1000px;*/
+            width: 1631px;
+            height: 2290px;
+        }
+        #ipad .svg_ad #lynx_can {
+            bottom: -45px;
+            z-index: 1;
+            width: 130px;
+            height: 210px;
+        }
+        #ipad .svg_ad.active_overlay #lynx_can {
+            bottom: -500px;
+            z-index: 1;
+            width: 390px;
+            height: 390px;
+            left: 189px;
+        }
+        #ipad .svg_ad.active #lynx_can {
+            bottom: -85px;
+        }
+        #ipad .svg_ad h2 {
+            font-size: 52px;
+            top: 10px;  
+        }
+        #ipad .svg_ad h3 {
+            font-size: 38px;
+            line-height: 33px !important;
+            top: 0px;
+        }
+        #ipad .svg_ad a {
+            font-size: 32px;
+        }
+        
+        #ipad.landscape .active_overlay #lynx_can {
+            left: 300px;
+        }
+        #ipad.landscape .active_overlay #angel_girl {
+            right: 140px !important;
+        }
+        
+        #iphone5.landscape .active a {
+            top: 80px;
+        }
+        
+        #windows_surface .svg_ad.active_overlay #lynx_can {
+            bottom: -500px;
+            z-index: 1;
+            width: 390px;
+            height: 390px;
+            left: 89px;
+        }
+        #windows_surface .svg_ad.active #angel_girl{
+            animation: none;
+            -webkit-animation: none;
+            width: 1631px;
+            height: 2290px;
+            left: -127px;
+        }
+        #iphone.portrait .active_overlay {height: 325px !important;}
+        #iphone.landscape .active_overlay {height: 174px !important;}
+        #iphone5.portrait .active_overlay {height: 410px !important;}
+        #iphone5.landscape .active_overlay {height: 174px !important;}
+        #ipad.portrait .active_overlay {height: 900px !important;}
+        #ipad.landscape .active_overlay {height: 638px !important;}
+        #windows_surface.portrait .active_overlay {height: 921px !important;}
+        #windows_surface.landscape .active_overlay {height: 502px !important;}
+        #windows_phone.portrait .active_overlay {height: 435px !important;}
+        #windows_phone.landscape .active_overlay {height: 638px !important;}
+        
+        .active_overlay {
+            opacity: 0;
+            visibility: hidden;
+            z-index: 2;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .svg_ad.active {
+            opacity: 1;
+            visibility: visible;
+            transition: all 2s;
+        }
+        .svg_ad.active_overlay #angel_girl {
+            position: absolute;
+            right: -40px;
+            top: -430px;
+            left: 0px;
+            animation: none;
+            -webkit-animation: none;
+            opacity: 0;
+            width: 770px;
+            height: 1260px;
+        }
+        .svg_ad.active_overlay #lynx_can {
+            left: 120px;
+            bottom: -28px;
+            bottom: -178px;
+            width: 70px;
+            height: 170px;
+        }
+        .active a {
+            position: absolute;
+            top: 210px;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            z-index: 3;
+            color: white;
+            font-weight: bold;
+            font-family: 'Alegreya Sans SC', sans-serif;
+            text-transform: uppercase;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .active #close_ad {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: black;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-weight: bold;
+            border: 3px solid white;
+            z-index: 3;
+            font-family: fontawesome;
+        }
+        .active #close_ad:hover {
+            cursor: pointer;
+        }
+        
+        
